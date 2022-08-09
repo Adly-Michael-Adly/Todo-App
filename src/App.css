@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient( 90deg, rgb(216, 240, 160) 0%, rgb(120, 153, 31) 100%);
+}
+
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 700px;
+    background: #2e3b23;
+    text-align: center;
+    margin: 90px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+}
+
+h1 {
+    margin: 35px 0;
+    color: #fff;
+    font-size: 30px;
+}
+
+.complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.todo-form {
+    margin-bottom: 32px;
+}
+
+.todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #3cbeb8;
+    outline: none;
+    width: 350px;
+    background: transparent;
+    color: #fff;
+}
+
+.todo-input::placeholder {
+    color: #f3f1f1;
+}
+
+.todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient( 90deg, rgb(121, 203, 209) 0%, rgb(23, 188, 218) 100%);
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.todo-input.edit {
+    border: 2px solid #1d7186;
+}
+
+.todo-button.edit {
+    background: linear-gradient( 90deg, rgb(37, 133, 206) 0%, rgb(136, 174, 224) 100%);
+    padding: 16px 22px;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    background: linear-gradient( 90deg, rgb(105, 105, 59) 0%, rgb(235, 175, 152) 100%);
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.todo-row:nth-child(3n + 1) {
+    background: linear-gradient( 90deg, rgb(124, 114, 145) 0%, rgb(193, 119, 240) 100%);
+}
+
+.todo-row:nth-child(3n + 2) {
+    background: linear-gradient( 90deg, rgb(124, 86, 122) 0%, rgb(133, 31, 85) 100%);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.delete-icon:hover {
+    color: rgb(224, 17, 17);
+}
+
+.chack-icon:hover {
+    color: rgb(14, 240, 25);
+}
+
+.edit-icon:hover {
+    color: rgb(30, 27, 218);
+}
